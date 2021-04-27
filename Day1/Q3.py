@@ -1,4 +1,4 @@
-#There are better ways to do this I hope but this is Day1
+#I hope there are better ways to do this but this is Day1
 from mpi4py import MPI
 
 comm = MPI.COMM_WORLD
