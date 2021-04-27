@@ -8,6 +8,11 @@ You can follow this [link](https://code.visualstudio.com/docs/remote/wsl){:targe
 ## Running your code
 It's really simple if you have installed python, and mpi4py. Just run the following command in the terminal-
 ```
-mpiexec -n 2 python3 script_name.py
+mpiexec -n numProcs python3 ScriptName.py
 ```
 This is assuming that you have already installed python3 and mpi4py using pip which might require installing pip too.
+
+If you are using communication in your script, it's best to run the script using-
+```
+mpiexec -n numProcs python3 -m mpi4py ScriptName.py
+```
