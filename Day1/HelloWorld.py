@@ -1,5 +1,5 @@
 #Never use import *
-#There is a name class with Exception class in mpi4py and python
+#There is a name clash with Exception class in mpi4py and python
 from mpi4py import MPI
 
 #We don't need to initialize and terminate unlike the C++ Implementation
